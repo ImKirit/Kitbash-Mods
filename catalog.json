@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-11T15:17:44.173Z",
+  "updated": "2026-10-11T15:17:45.408Z",
   "loaders": {
     "bepinex5-x64": {
       "type": "bepinex5",
@@ -390,6 +390,140 @@
           "path": "BepInEx/plugins/RepoMinecraft/RepoMinecraft.dll",
           "size": 200704,
           "sha256": "4d9fa5158b28ea789c99c85e964554bf98c56fceb3007a537f9054867ef6d022"
+        }
+      ]
+    },
+    {
+      "id": "peakminecraft",
+      "game": "peak",
+      "name": {
+        "en": "Minecraft in PEAK",
+        "de": "Minecraft in PEAK"
+      },
+      "version": "0.1.0",
+      "author": "ImKirit",
+      "status": "experimental",
+      "released": "2026-10-11",
+      "summary": {
+        "en": "Build with Minecraft blocks on the mountain: hotbar, creative inventory, placing and breaking.",
+        "de": "Mit Minecraft-Blöcken am Berg bauen: Hotbar, Kreativ-Inventar, Setzen und Abbauen."
+      },
+      "description": {
+        "en": "B switches Minecraft mode on. The hotbar appears at the bottom, the crosshair in the middle. Left mouse breaks, right mouse places, middle mouse picks the block you aim at. F opens the block picker, the creative inventory. Blocks sit on a fixed one metre grid and can go anywhere within 4.5 blocks: on rock, on items, on other blocks.\n\nBlocks are solid. You can stand on them and climb them with PEAK's own climbing. Sand, red sand and gravel fall until something carries them. With a new level all blocks are gone.\n\nTextures, block models, GUI, font and sounds are read at runtime from your own Minecraft Java installation. The mod contains no Minecraft file. If no installation is found, the mod stays completely off and shows a message.",
+        "de": "Mit B schaltest du den Minecraft-Modus ein. Unten erscheint die Hotbar, in der Mitte das Fadenkreuz. Linke Maustaste baut ab, rechte setzt, mittlere holt den anvisierten Block. F öffnet die Blockauswahl, das Kreativ-Inventar. Blöcke sitzen auf einem festen 1-m-Raster und lassen sich überall hinsetzen, wo die Reichweite von 4,5 Blöcken hinkommt: an Fels, an Gegenstände, an andere Blöcke.\n\nBlöcke sind massiv. Man kann darauf stehen und mit PEAKs eigenem Klettern daran hoch. Sand, roter Sand und Kies fallen, bis etwas sie trägt. Mit einem neuen Level sind alle Blöcke weg.\n\nTexturen, Blockmodelle, GUI, Schrift und Sounds werden zur Laufzeit aus deiner eigenen Minecraft-Java-Installation gelesen. Die Mod enthält keine Minecraft-Datei. Wird keine Installation gefunden, bleibt die Mod komplett aus und zeigt eine Meldung."
+      },
+      "images": [
+        "images/mods/peakminecraft/selftest-world.png"
+      ],
+      "loader": "bepinex5-x64",
+      "minLauncherVersion": "0.1.0",
+      "requirements": [
+        {
+          "type": "minecraft-java",
+          "minVersion": "1.20.2",
+          "level": "required",
+          "text": {
+            "en": "Minecraft Java 1.20.2 or newer installed on this PC. Every player needs their own.",
+            "de": "Minecraft Java 1.20.2 oder neuer auf diesem PC installiert. Jeder Spieler braucht sein eigenes."
+          }
+        }
+      ],
+      "notes": [
+        {
+          "kind": "multiplayer",
+          "text": {
+            "en": "Everyone in the lobby needs this mod in the same version and their own Minecraft Java. The host's rules apply to all.",
+            "de": "Alle in der Lobby brauchen diese Mod in derselben Version und ein eigenes Minecraft Java. Es gelten die Regeln des Hosts."
+          }
+        },
+        {
+          "kind": "multiplayer",
+          "text": {
+            "en": "Private lobbies with friends only.",
+            "de": "Nur für private Lobbys mit Freunden."
+          }
+        },
+        {
+          "kind": "info",
+          "text": {
+            "en": "While the mode is on, the mouse wheel and 1 to 9 belong to the hotbar and PEAK's items cannot be switched. Uses the key B like Among Us in PEAK: change one of the two in its settings before combining them.",
+            "de": "Solange der Modus an ist, gehören Mausrad und 1 bis 9 der Hotbar, PEAKs Gegenstände lassen sich dann nicht wechseln. Benutzt die Taste B wie Among Us in PEAK: vor dem Kombinieren eine der beiden in den Einstellungen ändern."
+          }
+        },
+        {
+          "kind": "info",
+          "text": {
+            "en": "Your hotbar is saved in the mod's settings, the launcher keeps them between sessions.",
+            "de": "Deine Hotbar wird in den Einstellungen der Mod gespeichert, der Launcher bewahrt sie zwischen den Sitzungen auf."
+          }
+        },
+        {
+          "kind": "testing",
+          "text": {
+            "en": "Untested in multiplayer. The mod loads in PEAK and a self-test photographed the rendering in the game. Nobody has built, climbed or played with a second player yet.",
+            "de": "Im Multiplayer ungetestet. Die Mod lädt in PEAK, und ein Selbsttest hat die Darstellung im Spiel fotografiert. Gebaut, geklettert und zu zweit gespielt hat damit noch niemand."
+          }
+        }
+      ],
+      "controls": [
+        {
+          "key": "B",
+          "text": {
+            "en": "Minecraft mode on and off.",
+            "de": "Minecraft-Modus an und aus."
+          }
+        },
+        {
+          "key": "F",
+          "text": {
+            "en": "Open and close the block picker.",
+            "de": "Blockauswahl öffnen und schließen."
+          }
+        },
+        {
+          "key": "1 to 9, mouse wheel",
+          "text": {
+            "en": "Pick a hotbar slot.",
+            "de": "Hotbar-Slot wählen."
+          }
+        },
+        {
+          "key": "Hold left mouse",
+          "text": {
+            "en": "Break a block.",
+            "de": "Block abbauen."
+          }
+        },
+        {
+          "key": "Hold right mouse",
+          "text": {
+            "en": "Place a block.",
+            "de": "Block setzen."
+          }
+        },
+        {
+          "key": "Middle mouse",
+          "text": {
+            "en": "Pick the block you aim at.",
+            "de": "Anvisierten Block in die Hotbar holen."
+          }
+        }
+      ],
+      "conflicts": [],
+      "thirdParty": [],
+      "persist": [
+        "BepInEx/config/dev.imkirit.peak.minecraft.cfg"
+      ],
+      "package": {
+        "url": "mods/peak/peakminecraft/peakminecraft-0.1.0.zip",
+        "size": 60285,
+        "sha256": "fd7b6d1ca00a79990658b2cf338961d2d997721b9098e821468c0a6e0538af2c"
+      },
+      "files": [
+        {
+          "path": "BepInEx/plugins/PeakMinecraft/PeakMinecraft.dll",
+          "size": 131584,
+          "sha256": "e882544202a1e54f015b6ba0adba63df7ce57cd8b52e94f1fb424575cb4ec9f8"
         }
       ]
     }
