@@ -1,0 +1,75 @@
+{
+  "id": "peakrepomonsters",
+  "game": "peak",
+  "name": { "en": "R.E.P.O. Monsters", "de": "R.E.P.O.-Monster" },
+  "version": "0.2.0",
+  "author": "ImKirit",
+  "status": "experimental",
+  "summary": {
+    "en": "All 29 enemy types from R.E.P.O. hunt the climbers on the mountain.",
+    "de": "Alle 29 Gegnertypen aus R.E.P.O. jagen die Kletterer am Berg."
+  },
+  "description": {
+    "en": "During a run the host lets monsters appear near the climbers. They roam, notice players by sight, hearing or gaze depending on the monster, chase them and attack. Damage runs through PEAK's own systems: injury, and depending on the monster poison, heat, cold, spores or drowsiness, plus falling over, pushing and dropping your items.\n\nInstead of 29 separate brains there are four ways of moving (hover, walk, hop, stand) and four ways of attacking (melee, ranged, grab, explode) with special rules on top. To shake a monster off, break the line of sight, hold out for 25 seconds or get more than 80 metres away.\n\nThe models are read at runtime from your own R.E.P.O. installation. The mod contains no R.E.P.O. file. Without R.E.P.O. simple placeholder models appear and the mod still works.",
+    "de": "Der Host lässt während eines Runs Monster in der Nähe der Kletterer erscheinen. Sie streifen umher, bemerken Spieler je nach Monster durch Sicht, Gehör oder Blick, jagen sie und greifen an. Schaden läuft über PEAKs eigene Systeme: Verletzung, je nach Monster dazu Gift, Hitze, Kälte, Sporen oder Müdigkeit, außerdem Umfallen, Stoßen und Fallenlassen deiner Sachen.\n\nStatt 29 einzelner KIs gibt es vier Bewegungsarten (schweben, laufen, hüpfen, stehen) und vier Angriffsarten (Nahkampf, Fernangriff, Greifen, Explodieren), dazu Sonderregeln. Abschütteln: Sichtlinie brechen, 25 Sekunden durchhalten oder weiter als 80 Meter wegkommen.\n\nDie Modelle werden zur Laufzeit aus deiner eigenen R.E.P.O.-Installation gelesen. Die Mod enthält keine R.E.P.O.-Datei. Ohne R.E.P.O. erscheinen einfache Ersatzmodelle, die Mod funktioniert trotzdem."
+  },
+  "loader": "bepinex5-x64",
+  "minLauncherVersion": "0.1.0",
+  "installTo": "BepInEx/plugins/PeakRepoMonsters",
+  "include": [
+    { "from": "THIRD-PARTY-LICENSES.txt" }
+  ],
+  "persist": [
+    "BepInEx/config/dev.imkirit.peak.repomonsters.cfg"
+  ],
+  "requirements": [
+    {
+      "type": "steam-game",
+      "appId": 3241660,
+      "name": "R.E.P.O.",
+      "level": "recommended",
+      "text": {
+        "en": "R.E.P.O. installed on this PC for the real monster models. Without it you get simple placeholder models.",
+        "de": "R.E.P.O. auf diesem PC installiert, für die echten Monster-Modelle. Ohne gibt es einfache Ersatzmodelle."
+      }
+    }
+  ],
+  "notes": [
+    {
+      "kind": "multiplayer",
+      "text": {
+        "en": "Everyone in the lobby needs this mod in the same version. Only the host spawns.",
+        "de": "Alle in der Lobby brauchen diese Mod in derselben Version. Nur der Host spawnt."
+      }
+    },
+    {
+      "kind": "multiplayer",
+      "text": {
+        "en": "Private lobbies with friends only.",
+        "de": "Nur für private Lobbys mit Freunden."
+      }
+    },
+    {
+      "kind": "info",
+      "text": {
+        "en": "If R.E.P.O. is installed somewhere the mod does not look, set RepoPfad in the mod's settings.",
+        "de": "Liegt R.E.P.O. an einem Ort, an dem die Mod nicht sucht, trag ihn als RepoPfad in den Einstellungen der Mod ein."
+      }
+    },
+    {
+      "kind": "testing",
+      "text": {
+        "en": "Untested in multiplayer. Version 0.1.0 loaded in the game, version 0.2.0 has not been started in the game yet. 28 of 29 models were read and checked outside the game, how they look in PEAK is unchecked.",
+        "de": "Im Multiplayer ungetestet. Version 0.1.0 hat im Spiel geladen, Version 0.2.0 wurde im Spiel noch nicht gestartet. 28 von 29 Modellen wurden außerhalb des Spiels gelesen und geprüft, wie sie in PEAK aussehen, ist ungeprüft."
+      }
+    }
+  ],
+  "controls": [
+    { "key": "Right Shift", "text": { "en": "Spawn menu with all monsters.", "de": "Spawn-Menü mit allen Monstern." } },
+    { "key": "F9", "text": { "en": "Host only: a random monster 10 to 14 metres away.", "de": "Nur Host: sofort ein zufälliges Monster in 10 bis 14 Metern Entfernung." } }
+  ],
+  "thirdParty": [
+    { "name": "AssetsTools.NET 3.0.0 (AssetsTools.NET.dll)", "license": "MIT", "url": "https://github.com/nesrak1/AssetsTools.NET" },
+    { "name": "classdata.tpk from UABEA", "license": "MIT", "url": "https://github.com/nesrak1/UABEA" }
+  ]
+}
