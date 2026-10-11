@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-10-11T00:00:00.000Z",
+  "loaders": {
+    "bepinex5-x64": {
+      "type": "bepinex5",
+      "name": "BepInEx",
+      "version": "5.4.23.5",
+      "arch": "x64",
+      "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip",
+      "size": 639118,
+      "sha256": "82f9878551030f54657792c0740d9d51a09500eeae1fba21106b0c441e6732c4",
+      "license": "LGPL-2.1",
+      "homepage": "https://github.com/BepInEx/BepInEx"
+    }
+  },
+  "games": [
+    {
+      "id": "repo",
+      "name": "R.E.P.O.",
+      "status": "available",
+      "tagline": {
+        "en": "Co-op horror with physics. Haul valuables, avoid what lives there.",
+        "de": "Koop-Horror mit Physik. Wertsachen schleppen, den Bewohnern ausweichen."
+      },
+      "platform": "steam",
+      "steam": { "appId": 3241660 },
+      "executable": "REPO.exe",
+      "processName": "REPO.exe",
+      "engine": "unity-mono",
+      "antiCheat": false
+    },
+    {
+      "id": "peak",
+      "name": "PEAK",
+      "status": "available",
+      "tagline": {
+        "en": "Co-op climbing. Get everyone up the mountain.",
+        "de": "Koop-Klettern. Alle müssen den Berg hoch."
+      },
+      "platform": "steam",
+      "steam": { "appId": 3527290 },
+      "executable": "PEAK.exe",
+      "processName": "PEAK.exe",
+      "engine": "unity-mono",
+      "antiCheat": false
+    },
+    {
+      "id": "minecraft",
+      "name": "Minecraft",
+      "status": "coming-later",
+      "tagline": {
+        "en": "Fabric mods for Minecraft Java. Not supported yet.",
+        "de": "Fabric-Mods für Minecraft Java. Wird noch nicht unterstützt."
+      }
+    }
+  ],
+  "mods": []
+}
