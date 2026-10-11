@@ -1,0 +1,73 @@
+{
+  "id": "repomimesis",
+  "game": "repo",
+  "name": { "en": "Mimics", "de": "Mimiks" },
+  "version": "0.2.0",
+  "author": "ImKirit",
+  "status": "experimental",
+  "summary": {
+    "en": "Creatures that look like one of your friends and talk with sentences that friend really said.",
+    "de": "Wesen, die wie einer deiner Mitspieler aussehen und mit Sätzen sprechen, die er wirklich gesagt hat."
+  },
+  "description": {
+    "en": "Mimics appear in the level: copies of a living player. They walk around like players, look at people, follow single players and speak with real sentences the copied player said earlier. No speech is ever generated. When an attack condition is met they drop the disguise and attack.\n\nThe mod only listens to your own microphone, exactly the audio your friends hear anyway, and cuts it into whole sentences. Up to 40 sentences (200 seconds) are kept as your own voice library. The host decides everything, each player's game plays the same clip from its own copy.\n\nThe idea comes from the game MIMESIS. No file of that game is involved.",
+    "de": "Im Level erscheinen Mimiks: Kopien eines lebenden Mitspielers. Sie laufen herum wie Spieler, schauen Leute an, folgen einzelnen Spielern und sprechen mit echten, früher aufgenommenen Sätzen des kopierten Spielers. Es wird nie Sprache künstlich erzeugt. Ist eine Angriffsbedingung erfüllt, enttarnen sie sich und greifen an.\n\nDie Mod hört nur dein eigenes Mikrofon ab, genau das, was deine Mitspieler ohnehin hören, und schneidet es in ganze Sätze. Bis zu 40 Sätze (200 Sekunden) bleiben als deine eigene Stimmbibliothek erhalten. Der Host entscheidet alles, jedes Spiel spielt denselben Clip aus seiner eigenen Kopie ab.\n\nDie Idee stammt aus dem Spiel MIMESIS. Keine Datei dieses Spiels ist beteiligt."
+  },
+  "images": ["selftest-mimic.png"],
+  "loader": "bepinex5-x64",
+  "minLauncherVersion": "0.1.0",
+  "installTo": "BepInEx/plugins/RepoMimesis",
+  "persist": [
+    "BepInEx/config/dev.imkirit.repomimesis.cfg",
+    "BepInEx/config/RepoMimesis"
+  ],
+  "requirements": [],
+  "notes": [
+    {
+      "kind": "multiplayer",
+      "text": {
+        "en": "Everyone in the lobby needs this mod in the same version. The host decides everything.",
+        "de": "Alle in der Lobby brauchen diese Mod in derselben Version. Der Host entscheidet alles."
+      }
+    },
+    {
+      "kind": "multiplayer",
+      "text": {
+        "en": "Private lobbies with friends only.",
+        "de": "Nur für private Lobbys mit Freunden."
+      }
+    },
+    {
+      "kind": "privacy",
+      "text": {
+        "en": "Records your own voice from the voice chat after a one-time consent per Steam account, stores it on your PC and passes it to the players in your lobby who also run the mod. Until you agree nothing is recorded, stored or sent. You can withdraw in the mod menu (F7), which deletes your library.",
+        "de": "Nimmt nach einer einmaligen Einwilligung pro Steam-Konto deine eigene Stimme aus dem Sprachchat auf, speichert sie auf deinem PC und gibt sie an die Spieler deiner Lobby weiter, die die Mod auch haben. Bis du zustimmst, wird nichts aufgenommen, gespeichert oder gesendet. Im Mod-Menü (F7) kannst du widerrufen, das löscht deine Bibliothek."
+      }
+    },
+    {
+      "kind": "info",
+      "text": {
+        "en": "The launcher keeps your voice library and your settings between sessions. Clips of other players only live in memory until you leave the lobby.",
+        "de": "Der Launcher bewahrt deine Stimmbibliothek und deine Einstellungen zwischen den Sitzungen auf. Clips anderer Spieler liegen nur bis zum Verlassen der Lobby im Arbeitsspeicher."
+      }
+    },
+    {
+      "kind": "info",
+      "text": {
+        "en": "No voices in single player, the game has no voice chat there.",
+        "de": "Im Einzelspieler gibt es keine Stimmen, das Spiel hat dort keinen Sprachchat."
+      }
+    },
+    {
+      "kind": "testing",
+      "text": {
+        "en": "Untested in multiplayer. The voice side passed 22 offline checks and the mod loads in the game, but nobody has heard a mimic speak real sentences in a lobby yet. Spawning in a level, following, attacking and damage are unplayed.",
+        "de": "Im Multiplayer ungetestet. Die Stimmseite hat 22 Offline-Prüfungen bestanden und die Mod lädt im Spiel, aber noch niemand hat einen Mimik in einer Lobby mit echten Sätzen sprechen hören. Spawnen im Level, Folgen, Angriff und Schaden sind ungespielt."
+      }
+    }
+  ],
+  "controls": [
+    { "key": "F7", "text": { "en": "Mimic menu: consent, your library, delete. Host: spawn a mimic, remove all.", "de": "Mimik-Menü: Einwilligung, eigene Bibliothek, Löschen. Host: Mimik spawnen, alle entfernen." } },
+    { "key": "J / N", "text": { "en": "Agree or decline in the consent dialog.", "de": "Im Einwilligungsdialog zustimmen oder ablehnen." } }
+  ]
+}
