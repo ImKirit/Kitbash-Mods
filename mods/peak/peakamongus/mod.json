@@ -1,0 +1,68 @@
+{
+  "id": "peakamongus",
+  "game": "peak",
+  "name": { "en": "Among Us in PEAK", "de": "Among Us in PEAK" },
+  "version": "0.1.0",
+  "author": "ImKirit",
+  "status": "experimental",
+  "summary": {
+    "en": "Roles, traitors, meetings and votes while you climb. The summit is the crew's task.",
+    "de": "Rollen, Verräter, Meetings und Abstimmungen beim Klettern. Der Gipfel ist die Aufgabe der Crew."
+  },
+  "description": {
+    "en": "A few seconds after the run starts the host hands out roles. Everyone only learns their own, traitors see their partners. Traitors can kill at short range and cut a rope another player hangs on, both with a cooldown and both checked by the host.\n\nAnyone alive can call an emergency meeting (a limited number) or report a body. In a meeting all living players freeze and vote in a window with discussion and voting time. Most votes is out, a tie or skipping throws nobody out. The round ends with a banner that reveals who the traitors were, the PEAK run itself continues.\n\nAmong Us is only the model for the rules. No file or asset of it is used. Tasks, sabotage, vents and ghost chat are not part of this mod.",
+    "de": "Ein paar Sekunden nach dem Start des Runs verteilt der Host die Rollen. Jeder erfährt nur seine eigene, Verräter sehen ihre Partner. Verräter können auf kurze Distanz töten und ein Seil kappen, an dem ein anderer Spieler hängt, beides mit Cooldown und beides vom Host geprüft.\n\nJeder Lebende kann ein Notfall-Meeting ausrufen (begrenzte Anzahl) oder eine Leiche melden. Im Meeting frieren alle Lebenden ein und stimmen in einem Fenster mit Diskussions- und Abstimmzeit ab. Die meisten Stimmen fliegen raus, Gleichstand und Überspringen werfen niemanden raus. Die Runde endet mit einem Banner, das auflöst, wer Verräter war, der PEAK-Run selbst läuft weiter.\n\nAmong Us ist nur die Vorlage für die Regeln. Keine Datei und kein Asset davon wird benutzt. Aufgaben, Sabotagen, Lüftungsschächte und Geister-Chat sind nicht Teil dieser Mod."
+  },
+  "loader": "bepinex5-x64",
+  "minLauncherVersion": "0.1.0",
+  "installTo": "BepInEx/plugins/PeakAmongUs",
+  "persist": [
+    "BepInEx/config/dev.imkirit.peakamongus.cfg"
+  ],
+  "requirements": [],
+  "notes": [
+    {
+      "kind": "multiplayer",
+      "text": {
+        "en": "Everyone in the lobby needs this mod in the same version. Players without it or with another version do not take part. The host's rule settings apply to all.",
+        "de": "Alle in der Lobby brauchen diese Mod in derselben Version. Spieler ohne Mod oder mit anderer Version spielen nicht mit. Die Regel-Einstellungen des Hosts gelten für alle."
+      }
+    },
+    {
+      "kind": "multiplayer",
+      "text": {
+        "en": "Private lobbies with friends only. A host who changes the mod can cheat.",
+        "de": "Nur für private Lobbys mit Freunden. Ein Host, der die Mod verändert, kann schummeln."
+      }
+    },
+    {
+      "kind": "info",
+      "text": {
+        "en": "The default keys are a guess and may collide with PEAK's own keys. B is also used by Minecraft in PEAK. All keys can be changed in the mod's settings.",
+        "de": "Die Standardtasten sind geraten und können mit PEAKs eigenen Tasten kollidieren. B benutzt auch Minecraft in PEAK. Alle Tasten lassen sich in den Einstellungen der Mod ändern."
+      }
+    },
+    {
+      "kind": "info",
+      "text": {
+        "en": "To look at it alone, set TestModus = true in the mod's settings. Kill and rope need a second player.",
+        "de": "Zum Ansehen allein in den Einstellungen der Mod TestModus = true setzen. Kill und Seil brauchen einen zweiten Spieler."
+      }
+    },
+    {
+      "kind": "testing",
+      "text": {
+        "en": "Untested, also in single player. The mod compiles without errors and has never been checked in the running game.",
+        "de": "Ungetestet, auch im Einzelspieler. Die Mod kompiliert fehlerfrei und wurde im laufenden Spiel noch nie geprüft."
+      }
+    }
+  ],
+  "controls": [
+    { "key": "G", "text": { "en": "Traitor: kill the nearest crew member in range.", "de": "Verräter: nächstes Crewmitglied in Reichweite töten." } },
+    { "key": "H", "text": { "en": "Traitor: cut the rope another player hangs on.", "de": "Verräter: Seil kappen, an dem ein anderer Spieler hängt." } },
+    { "key": "B", "text": { "en": "Report a body nearby.", "de": "Leiche in der Nähe melden." } },
+    { "key": "N", "text": { "en": "Call an emergency meeting.", "de": "Notfall-Meeting ausrufen." } },
+    { "key": "F2", "text": { "en": "Show or hide the role box.", "de": "Rollenkasten ein- und ausblenden." } },
+    { "key": "1 to 9, 0", "text": { "en": "In a meeting: vote for that player, 0 skips.", "de": "Im Meeting: für diesen Spieler stimmen, 0 überspringt." } }
+  ]
+}
