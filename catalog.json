@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-11T15:17:42.089Z",
+  "updated": "2026-10-11T15:17:43.265Z",
   "loaders": {
     "bepinex5-x64": {
       "type": "bepinex5",
@@ -161,6 +161,107 @@
           "path": "BepInEx/plugins/RepoMimesis/RepoMimesis.dll",
           "size": 160768,
           "sha256": "7dc396cab5d2863911d4aa7d1fd118b84cae8acc53bc794c8b926448df5e86a3"
+        }
+      ]
+    },
+    {
+      "id": "repoportalgun",
+      "game": "repo",
+      "name": {
+        "en": "Portal Gun",
+        "de": "Portalkanone"
+      },
+      "version": "0.1.0",
+      "author": "ImKirit",
+      "status": "experimental",
+      "released": "2026-10-11",
+      "summary": {
+        "en": "Two linked portals: step in on one side, come out of the other with your momentum.",
+        "de": "Zwei verbundene Portale: auf der einen Seite rein, auf der anderen mit Schwung wieder raus."
+      },
+      "description": {
+        "en": "Draw the portal gun, place a blue and an orange portal on walls, floors or ceilings and travel between them. Momentum is kept. Valuables, carts, items, tumbling players and enemies with a physics body go through as well. You can look through a portal, with a swirl as fallback when the see-through view is not available.\n\nWhile the gun is drawn the grab beam is off. Put it away and the game behaves as without the mod.\n\nPortal is only the model for the mechanic. No Valve file, code or asset is used, everything is drawn from code.",
+        "de": "Zieh die Portalkanone, setz ein blaues und ein oranges Portal an Wände, Böden oder Decken und reise zwischen ihnen. Der Schwung bleibt erhalten. Auch Wertsachen, Karren, Items, taumelnde Spieler und Gegner mit Physikkörper gehen hindurch. Durch ein Portal kann man hindurchsehen, als Ersatz gibt es einen Strudel, wenn die Durchsicht nicht verfügbar ist.\n\nSolange die Kanone gezogen ist, greift der Greifstrahl nicht. Weggesteckt ist alles wie ohne Mod.\n\nPortal ist nur das Vorbild für die Mechanik. Keine Datei, kein Code und kein Asset von Valve wird benutzt, alles entsteht aus Code."
+      },
+      "images": [],
+      "loader": "bepinex5-x64",
+      "minLauncherVersion": "0.1.0",
+      "requirements": [],
+      "notes": [
+        {
+          "kind": "multiplayer",
+          "text": {
+            "en": "Everyone in the lobby needs this mod in the same version. Players without it see no portals and watch objects jump.",
+            "de": "Alle in der Lobby brauchen diese Mod in derselben Version. Spieler ohne Mod sehen keine Portale und sehen Objekte springen."
+          }
+        },
+        {
+          "kind": "multiplayer",
+          "text": {
+            "en": "Private lobbies with friends only.",
+            "de": "Nur für private Lobbys mit Freunden."
+          }
+        },
+        {
+          "kind": "info",
+          "text": {
+            "en": "Other players do not see the gun in your hands, only the portals.",
+            "de": "Mitspieler sehen die Kanone in deiner Hand nicht, nur die Portale."
+          }
+        },
+        {
+          "kind": "testing",
+          "text": {
+            "en": "Built and compiled, never started in the game. Everything described here is derived from reading the game code. Portals may be invisible or the view through them wrong until that first test has happened.",
+            "de": "Gebaut und kompiliert, im Spiel noch nie gestartet. Alles hier Beschriebene ist aus dem gelesenen Spielcode abgeleitet. Bis zum ersten Test können Portale unsichtbar oder die Durchsicht falsch sein."
+          }
+        }
+      ],
+      "controls": [
+        {
+          "key": "G",
+          "text": {
+            "en": "Draw or put away the gun.",
+            "de": "Kanone ziehen oder wegstecken."
+          }
+        },
+        {
+          "key": "Left click",
+          "text": {
+            "en": "Blue portal.",
+            "de": "Blaues Portal."
+          }
+        },
+        {
+          "key": "Right click",
+          "text": {
+            "en": "Orange portal.",
+            "de": "Oranges Portal."
+          }
+        },
+        {
+          "key": "H",
+          "text": {
+            "en": "Remove your portals.",
+            "de": "Eigene Portale entfernen."
+          }
+        }
+      ],
+      "conflicts": [],
+      "thirdParty": [],
+      "persist": [
+        "BepInEx/config/dev.imkirit.repoportalgun.cfg"
+      ],
+      "package": {
+        "url": "mods/repo/repoportalgun/repoportalgun-0.1.0.zip",
+        "size": 29025,
+        "sha256": "e200775b3b92ffd8574d42b8c63e157f3953d6840830a5387de8a76dc3d7d9b1"
+      },
+      "files": [
+        {
+          "path": "BepInEx/plugins/RepoPortalGun/RepoPortalGun.dll",
+          "size": 60928,
+          "sha256": "a8b6997e63a296722ce34ca4cee6171a70c05b9c21e08bf3dfcb910355292c9e"
         }
       ]
     }
