@@ -1,0 +1,72 @@
+{
+  "id": "repominecraft",
+  "game": "repo",
+  "name": { "en": "Minecraft in R.E.P.O.", "de": "Minecraft in R.E.P.O." },
+  "version": "0.1.0",
+  "author": "ImKirit",
+  "status": "experimental",
+  "summary": {
+    "en": "Place and break blocks, light TNT and meet nine Minecraft mobs inside R.E.P.O. levels.",
+    "de": "Blöcke setzen und abbauen, TNT zünden und neun Minecraft-Mobs in den Levels von R.E.P.O. treffen."
+  },
+  "description": {
+    "en": "Press B for Minecraft mode. You get the hotbar, a block picker in the look of the creative inventory and 69 blocks that sit on the world grid: cubes, logs, slabs, stairs, glass, leaves. Break times follow hardness or are instant in creative mode. TNT blows up after four seconds, destroys placed blocks and throws players, valuables and enemies around. Blocks are solid for players, valuables and carts.\n\nNine mobs are built: zombie, skeleton with bow, creeper, spider, enderman, pig, chicken, slime and iron golem. They spawn out of sight and the host has a spawn menu.\n\nTextures, GUI, font and sounds are read at runtime from your own Minecraft Java installation. The mod contains no Minecraft file. Without a Minecraft installation it stays off and tells you so.",
+    "de": "Mit B schaltest du den Minecraft-Modus ein. Du bekommst die Hotbar, eine Blockauswahl im Aussehen des Kreativ-Inventars und 69 Blöcke im Weltraster: Würfel, Stämme, Stufen, Treppen, Glas, Laub. Die Abbauzeit richtet sich nach der Härte oder ist im Kreativmodus sofort. TNT explodiert nach vier Sekunden, zerstört gesetzte Blöcke und schleudert Spieler, Wertsachen und Gegner. Blöcke sind fest für Spieler, Wertsachen und Karren.\n\nNeun Mobs sind gebaut: Zombie, Skelett mit Bogen, Creeper, Spinne, Enderman, Schwein, Huhn, Schleim und Eisengolem. Sie spawnen außer Sicht, der Host hat ein Spawn-Menü.\n\nTexturen, GUI, Schrift und Töne werden zur Laufzeit aus deiner eigenen Minecraft-Java-Installation gelesen. Die Mod enthält keine Minecraft-Datei. Ohne Minecraft bleibt sie aus und sagt das auch."
+  },
+  "images": ["selftest-mobs.png", "selftest-blocks.png"],
+  "loader": "bepinex5-x64",
+  "minLauncherVersion": "0.1.0",
+  "installTo": "BepInEx/plugins/RepoMinecraft",
+  "persist": [
+    "BepInEx/config/dev.imkirit.repominecraft.cfg"
+  ],
+  "requirements": [
+    {
+      "type": "minecraft-java",
+      "minVersion": "1.20.2",
+      "level": "required",
+      "text": {
+        "en": "Minecraft Java 1.20.2 or newer installed on this PC, 1.21.x is best. Every player needs their own.",
+        "de": "Minecraft Java 1.20.2 oder neuer auf diesem PC installiert, am besten 1.21.x. Jeder Spieler braucht sein eigenes."
+      }
+    }
+  ],
+  "notes": [
+    {
+      "kind": "multiplayer",
+      "text": {
+        "en": "Everyone in the lobby needs this mod in the same version and their own Minecraft Java. The host decides everything.",
+        "de": "Alle in der Lobby brauchen diese Mod in derselben Version und ein eigenes Minecraft Java. Der Host entscheidet alles."
+      }
+    },
+    {
+      "kind": "multiplayer",
+      "text": {
+        "en": "Private lobbies with friends only.",
+        "de": "Nur für private Lobbys mit Freunden."
+      }
+    },
+    {
+      "kind": "info",
+      "text": {
+        "en": "If the launcher finds your Minecraft but the mod does not, enter the path of the client jar in the mod's settings.",
+        "de": "Falls der Launcher dein Minecraft findet, die Mod aber nicht, trag den Pfad der Client-Jar in den Einstellungen der Mod ein."
+      }
+    },
+    {
+      "kind": "testing",
+      "text": {
+        "en": "Untested in multiplayer. The mod loads and a self-test rendered blocks and all nine mobs inside the running game. Building in a level, TNT, walking and attacking mobs have not been watched yet.",
+        "de": "Im Multiplayer ungetestet. Die Mod lädt, und ein Selbsttest hat Blöcke und alle neun Mobs im laufenden Spiel gerendert. Bauen im Level, TNT sowie laufende und angreifende Mobs hat noch niemand beobachtet."
+      }
+    }
+  ],
+  "controls": [
+    { "key": "B", "text": { "en": "Minecraft mode on or off.", "de": "Minecraft-Modus an oder aus." } },
+    { "key": "Mouse wheel, 1 to 9", "text": { "en": "Pick a slot. An empty slot frees your hand for the grab beam.", "de": "Slot wählen. Ein leerer Slot gibt die Hand für den Greifstrahl frei." } },
+    { "key": "Hold left click", "text": { "en": "Break a block. On a mob: punch.", "de": "Block abbauen. Auf einen Mob: Faustschlag." } },
+    { "key": "Right click", "text": { "en": "Place a block. On TNT: light it.", "de": "Block setzen. Auf TNT: zünden." } },
+    { "key": "E", "text": { "en": "Block picker.", "de": "Blockauswahl." } },
+    { "key": "M", "text": { "en": "Mob menu, host only.", "de": "Mob-Menü, nur Host." } }
+  ]
+}
