@@ -59,6 +59,10 @@ images/mods/<mod>/                    pictures shown on the mod page
         { "kind": "multiplayer", "text": { "en": "Everyone in the lobby needs this mod in the same version." } }
       ],
       "controls": [ { "key": "G", "text": { "en": "Draw or put away the gun." } } ],
+      "usage": {
+        "keys": [ { "key": "G", "text": { "en": "Draw or put away the gun.", "de": "Kanone ziehen oder wegstecken." } } ],
+        "steps": [ { "en": "Press G, then shoot two walls.", "de": "G drücken, dann auf zwei Wände schießen." } ]
+      },
       "conflicts": [],
       "thirdParty": [ { "name": "Some library 1.0", "license": "MIT", "url": "https://example.org" } ],
       "persist": ["BepInEx/config/dev.imkirit.repoportalgun.cfg"],
@@ -91,6 +95,7 @@ images/mods/<mod>/                    pictures shown on the mod page
 | `loader` | a loader the launcher knows. Today: `bepinex5-x64` (BepInEx 5.4.23.5). The launcher downloads it from the official BepInEx release with a fixed hash. A `loaders` section in an unofficial catalog is ignored |
 | `requirements` | checked on the player's PC. `steam-game` (installed), `minecraft-java` (optional `minVersion`). `level` is `required` (blocks the launch) or `recommended` |
 | `notes` | free text shown on the mod page, `kind` is `multiplayer`, `privacy`, `testing` or `info` |
+| `usage` | how to use the mod: `keys` (key plus text) and `steps` (short texts, at most 20). Shown on the mod page and in the in-game overlay of the launcher. `controls` is the older, keys-only form and is used when `usage.keys` is missing |
 | `conflicts` | ids of mods of the same catalog that cannot be combined with this one |
 | `persist` | files or folders, relative to the game folder, that hold the mod's settings and saved data. Kept by the launcher between sessions. For BepInEx they must be below `BepInEx/config/` or `BepInEx/plugins/` and must not overlap `files` |
 | `package` | the zip, its size in bytes and its SHA256 |
