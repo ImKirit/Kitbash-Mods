@@ -1,7 +1,10 @@
 {
   "id": "repominecraft",
   "game": "repo",
-  "name": { "en": "Minecraft in R.E.P.O.", "de": "Minecraft in R.E.P.O." },
+  "name": {
+    "en": "Minecraft in R.E.P.O.",
+    "de": "Minecraft in R.E.P.O."
+  },
   "version": "0.1.0",
   "author": "ImKirit",
   "status": "experimental",
@@ -13,7 +16,10 @@
     "en": "Press B for Minecraft mode. You get the hotbar, a block picker in the look of the creative inventory and 69 blocks that sit on the world grid: cubes, logs, slabs, stairs, glass, leaves. Break times follow hardness or are instant in creative mode. TNT blows up after four seconds, destroys placed blocks and throws players, valuables and enemies around. Blocks are solid for players, valuables and carts.\n\nNine mobs are built: zombie, skeleton with bow, creeper, spider, enderman, pig, chicken, slime and iron golem. They spawn out of sight and the host has a spawn menu.\n\nTextures, GUI, font and sounds are read at runtime from your own Minecraft Java installation. The mod contains no Minecraft file. Without a Minecraft installation it stays off and tells you so.",
     "de": "Mit B schaltest du den Minecraft-Modus ein. Du bekommst die Hotbar, eine Blockauswahl im Aussehen des Kreativ-Inventars und 69 Blöcke im Weltraster: Würfel, Stämme, Stufen, Treppen, Glas, Laub. Die Abbauzeit richtet sich nach der Härte oder ist im Kreativmodus sofort. TNT explodiert nach vier Sekunden, zerstört gesetzte Blöcke und schleudert Spieler, Wertsachen und Gegner. Blöcke sind fest für Spieler, Wertsachen und Karren.\n\nNeun Mobs sind gebaut: Zombie, Skelett mit Bogen, Creeper, Spinne, Enderman, Schwein, Huhn, Schleim und Eisengolem. Sie spawnen außer Sicht, der Host hat ein Spawn-Menü.\n\nTexturen, GUI, Schrift und Töne werden zur Laufzeit aus deiner eigenen Minecraft-Java-Installation gelesen. Die Mod enthält keine Minecraft-Datei. Ohne Minecraft bleibt sie aus und sagt das auch."
   },
-  "images": ["selftest-mobs.png", "selftest-blocks.png"],
+  "images": [
+    "selftest-mobs.png",
+    "selftest-blocks.png"
+  ],
   "loader": "bepinex5-x64",
   "minLauncherVersion": "0.1.0",
   "installTo": "BepInEx/plugins/RepoMinecraft",
@@ -62,11 +68,122 @@
     }
   ],
   "controls": [
-    { "key": "B", "text": { "en": "Minecraft mode on or off.", "de": "Minecraft-Modus an oder aus." } },
-    { "key": "Mouse wheel, 1 to 9", "text": { "en": "Pick a slot. An empty slot frees your hand for the grab beam.", "de": "Slot wählen. Ein leerer Slot gibt die Hand für den Greifstrahl frei." } },
-    { "key": "Hold left click", "text": { "en": "Break a block. On a mob: punch.", "de": "Block abbauen. Auf einen Mob: Faustschlag." } },
-    { "key": "Right click", "text": { "en": "Place a block. On TNT: light it.", "de": "Block setzen. Auf TNT: zünden." } },
-    { "key": "E", "text": { "en": "Block picker.", "de": "Blockauswahl." } },
-    { "key": "M", "text": { "en": "Mob menu, host only.", "de": "Mob-Menü, nur Host." } }
-  ]
+    {
+      "key": "B",
+      "text": {
+        "en": "Minecraft mode on or off.",
+        "de": "Minecraft-Modus an oder aus."
+      }
+    },
+    {
+      "key": "Mouse wheel, 1 to 9",
+      "text": {
+        "en": "Pick a slot. An empty slot frees your hand for the grab beam.",
+        "de": "Slot wählen. Ein leerer Slot gibt die Hand für den Greifstrahl frei."
+      }
+    },
+    {
+      "key": "Hold left click",
+      "text": {
+        "en": "Break a block. On a mob: punch.",
+        "de": "Block abbauen. Auf einen Mob: Faustschlag."
+      }
+    },
+    {
+      "key": "Right click",
+      "text": {
+        "en": "Place a block. On TNT: light it.",
+        "de": "Block setzen. Auf TNT: zünden."
+      }
+    },
+    {
+      "key": "E",
+      "text": {
+        "en": "Block picker.",
+        "de": "Blockauswahl."
+      }
+    },
+    {
+      "key": "M",
+      "text": {
+        "en": "Mob menu, host only.",
+        "de": "Mob-Menü, nur Host."
+      }
+    }
+  ],
+  "usage": {
+    "keys": [
+      {
+        "key": "B",
+        "text": {
+          "en": "Minecraft mode on or off.",
+          "de": "Minecraft-Modus an oder aus."
+        }
+      },
+      {
+        "key": "1 to 9, wheel",
+        "text": {
+          "en": "Pick a hotbar slot. An empty slot frees your hand for the grab beam.",
+          "de": "Hotbar-Slot wählen. Ein leerer Slot gibt die Hand für den Greifstrahl frei."
+        }
+      },
+      {
+        "key": "Hold left click",
+        "text": {
+          "en": "Break a block. On a mob: punch.",
+          "de": "Block abbauen. Auf einen Mob: Faustschlag."
+        }
+      },
+      {
+        "key": "Right click",
+        "text": {
+          "en": "Place a block. On TNT: light it.",
+          "de": "Block setzen. Auf TNT: zünden."
+        }
+      },
+      {
+        "key": "Middle click",
+        "text": {
+          "en": "Copy the block you aim at into the hotbar.",
+          "de": "Anvisierten Block in die Hotbar holen."
+        }
+      },
+      {
+        "key": "E",
+        "text": {
+          "en": "Block picker.",
+          "de": "Blockauswahl."
+        }
+      },
+      {
+        "key": "M",
+        "text": {
+          "en": "Mob menu, host only. Click spawns one, right click five.",
+          "de": "Mob-Menü, nur Host. Klick spawnt einen, Rechtsklick fünf."
+        }
+      }
+    ],
+    "steps": [
+      {
+        "en": "Minecraft Java must be installed on your PC, the mod reads textures and sounds from it.",
+        "de": "Minecraft Java muss auf deinem PC installiert sein, die Mod liest Texturen und Töne daraus."
+      },
+      {
+        "en": "In a level press B. The hotbar appears at the bottom.",
+        "de": "Im Level B drücken. Unten erscheint die Hotbar."
+      },
+      {
+        "en": "Place blocks with right click, break them with left click. E opens the block picker.",
+        "de": "Blöcke mit Rechtsklick setzen, mit Linksklick abbauen. E öffnet die Blockauswahl."
+      },
+      {
+        "en": "Place TNT and right click it, then keep your distance.",
+        "de": "TNT setzen, rechts anklicken, Abstand halten."
+      },
+      {
+        "en": "As host press M to spawn mobs. Press B again to get the normal game back.",
+        "de": "Als Host mit M Mobs spawnen. Erneut B bringt das normale Spiel zurück."
+      }
+    ]
+  }
 }

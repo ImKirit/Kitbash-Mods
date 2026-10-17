@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-17T22:07:01.911Z",
+  "updated": "2026-10-17T22:07:03.959Z",
   "loaders": {
     "bepinex5-x64": {
       "type": "bepinex5",
@@ -468,6 +468,81 @@
           }
         }
       ],
+      "usage": {
+        "keys": [
+          {
+            "key": "B",
+            "text": {
+              "en": "Minecraft mode on or off.",
+              "de": "Minecraft-Modus an oder aus."
+            }
+          },
+          {
+            "key": "1 to 9, wheel",
+            "text": {
+              "en": "Pick a hotbar slot. An empty slot frees your hand for the grab beam.",
+              "de": "Hotbar-Slot wählen. Ein leerer Slot gibt die Hand für den Greifstrahl frei."
+            }
+          },
+          {
+            "key": "Hold left click",
+            "text": {
+              "en": "Break a block. On a mob: punch.",
+              "de": "Block abbauen. Auf einen Mob: Faustschlag."
+            }
+          },
+          {
+            "key": "Right click",
+            "text": {
+              "en": "Place a block. On TNT: light it.",
+              "de": "Block setzen. Auf TNT: zünden."
+            }
+          },
+          {
+            "key": "Middle click",
+            "text": {
+              "en": "Copy the block you aim at into the hotbar.",
+              "de": "Anvisierten Block in die Hotbar holen."
+            }
+          },
+          {
+            "key": "E",
+            "text": {
+              "en": "Block picker.",
+              "de": "Blockauswahl."
+            }
+          },
+          {
+            "key": "M",
+            "text": {
+              "en": "Mob menu, host only. Click spawns one, right click five.",
+              "de": "Mob-Menü, nur Host. Klick spawnt einen, Rechtsklick fünf."
+            }
+          }
+        ],
+        "steps": [
+          {
+            "en": "Minecraft Java must be installed on your PC, the mod reads textures and sounds from it.",
+            "de": "Minecraft Java muss auf deinem PC installiert sein, die Mod liest Texturen und Töne daraus."
+          },
+          {
+            "en": "In a level press B. The hotbar appears at the bottom.",
+            "de": "Im Level B drücken. Unten erscheint die Hotbar."
+          },
+          {
+            "en": "Place blocks with right click, break them with left click. E opens the block picker.",
+            "de": "Blöcke mit Rechtsklick setzen, mit Linksklick abbauen. E öffnet die Blockauswahl."
+          },
+          {
+            "en": "Place TNT and right click it, then keep your distance.",
+            "de": "TNT setzen, rechts anklicken, Abstand halten."
+          },
+          {
+            "en": "As host press M to spawn mobs. Press B again to get the normal game back.",
+            "de": "Als Host mit M Mobs spawnen. Erneut B bringt das normale Spiel zurück."
+          }
+        ]
+      },
       "conflicts": [],
       "thirdParty": [],
       "persist": [
