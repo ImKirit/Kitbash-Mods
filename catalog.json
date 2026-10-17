@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-17T22:07:11.230Z",
+  "updated": "2026-10-17T22:11:48.213Z",
   "loaders": {
     "bepinex5-x64": {
       "type": "bepinex5",
@@ -81,7 +81,6 @@
       },
       "images": [
         "images/mods/repomimesis/selftest-mimic.png",
-        "images/mods/repomimesis/selftest-mimic-front.png",
         "images/mods/repomimesis/selftest-reveal.png",
         "images/mods/repomimesis/selftest-walk.png"
       ],
