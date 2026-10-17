@@ -1,7 +1,10 @@
 {
   "id": "repomimesis",
   "game": "repo",
-  "name": { "en": "Mimics", "de": "Mimiks" },
+  "name": {
+    "en": "Mimics",
+    "de": "Mimiks"
+  },
   "version": "0.2.0",
   "author": "ImKirit",
   "status": "experimental",
@@ -13,7 +16,12 @@
     "en": "Mimics appear in the level: copies of a living player. They walk around like players, look at people, follow single players and speak with real sentences the copied player said earlier. No speech is ever generated. When an attack condition is met they drop the disguise and attack.\n\nThe mod only listens to your own microphone, exactly the audio your friends hear anyway, and cuts it into whole sentences. Up to 40 sentences (200 seconds) are kept as your own voice library. The host decides everything, each player's game plays the same clip from its own copy.\n\nThe idea comes from the game MIMESIS. No file of that game is involved.",
     "de": "Im Level erscheinen Mimiks: Kopien eines lebenden Mitspielers. Sie laufen herum wie Spieler, schauen Leute an, folgen einzelnen Spielern und sprechen mit echten, früher aufgenommenen Sätzen des kopierten Spielers. Es wird nie Sprache künstlich erzeugt. Ist eine Angriffsbedingung erfüllt, enttarnen sie sich und greifen an.\n\nDie Mod hört nur dein eigenes Mikrofon ab, genau das, was deine Mitspieler ohnehin hören, und schneidet es in ganze Sätze. Bis zu 40 Sätze (200 Sekunden) bleiben als deine eigene Stimmbibliothek erhalten. Der Host entscheidet alles, jedes Spiel spielt denselben Clip aus seiner eigenen Kopie ab.\n\nDie Idee stammt aus dem Spiel MIMESIS. Keine Datei dieses Spiels ist beteiligt."
   },
-  "images": ["selftest-mimic.png"],
+  "images": [
+    "selftest-mimic.png",
+    "selftest-mimic-front.png",
+    "selftest-reveal.png",
+    "selftest-walk.png"
+  ],
   "loader": "bepinex5-x64",
   "minLauncherVersion": "0.1.0",
   "installTo": "BepInEx/plugins/RepoMimesis",
@@ -67,7 +75,59 @@
     }
   ],
   "controls": [
-    { "key": "F7", "text": { "en": "Mimic menu: consent, your library, delete. Host: spawn a mimic, remove all.", "de": "Mimik-Menü: Einwilligung, eigene Bibliothek, Löschen. Host: Mimik spawnen, alle entfernen." } },
-    { "key": "J / N", "text": { "en": "Agree or decline in the consent dialog.", "de": "Im Einwilligungsdialog zustimmen oder ablehnen." } }
-  ]
+    {
+      "key": "F7",
+      "text": {
+        "en": "Mimic menu: consent, your library, delete. Host: spawn a mimic, remove all.",
+        "de": "Mimik-Menü: Einwilligung, eigene Bibliothek, Löschen. Host: Mimik spawnen, alle entfernen."
+      }
+    },
+    {
+      "key": "J / N",
+      "text": {
+        "en": "Agree or decline in the consent dialog.",
+        "de": "Im Einwilligungsdialog zustimmen oder ablehnen."
+      }
+    }
+  ],
+  "usage": {
+    "keys": [
+      {
+        "key": "F7",
+        "text": {
+          "en": "Mimic menu: consent, your voice library, delete it. The host can spawn a mimic of a player or remove all.",
+          "de": "Mimik-Menü: Einwilligung, deine Stimmbibliothek, Löschen. Der Host kann einen Mimik eines Spielers spawnen oder alle entfernen."
+        }
+      },
+      {
+        "key": "J / N",
+        "text": {
+          "en": "Agree or decline in the one-time consent dialog.",
+          "de": "Im einmaligen Einwilligungsdialog zustimmen oder ablehnen."
+        }
+      }
+    ],
+    "steps": [
+      {
+        "en": "Everyone in the lobby starts the game with this mod in the same version.",
+        "de": "Alle in der Lobby starten das Spiel mit dieser Mod in derselben Version."
+      },
+      {
+        "en": "On the first start answer the consent dialog with J (agree) or N (decline). Without consent nothing of your voice is recorded.",
+        "de": "Beim ersten Start den Einwilligungsdialog mit J (zustimmen) oder N (ablehnen) beantworten. Ohne Zustimmung wird nichts von deiner Stimme aufgenommen."
+      },
+      {
+        "en": "Talk normally in the voice chat. Whole sentences end up in your library, up to 40 sentences.",
+        "de": "Ganz normal im Sprachchat reden. Ganze Sätze landen in deiner Bibliothek, höchstens 40."
+      },
+      {
+        "en": "In a level, mimics of your friends appear, walk around and speak with their real sentences. When they reveal themselves, run.",
+        "de": "Im Level erscheinen Mimiks deiner Mitspieler, laufen herum und sprechen mit ihren echten Sätzen. Wenn sie sich enttarnen: weglaufen."
+      },
+      {
+        "en": "The host can spawn a mimic of any player from the F7 menu to try it out.",
+        "de": "Der Host kann im F7-Menü zum Ausprobieren einen Mimik eines beliebigen Spielers spawnen."
+      }
+    ]
+  }
 }
