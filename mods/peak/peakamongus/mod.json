@@ -1,7 +1,10 @@
 {
   "id": "peakamongus",
   "game": "peak",
-  "name": { "en": "Among Us in PEAK", "de": "Among Us in PEAK" },
+  "name": {
+    "en": "Among Us in PEAK",
+    "de": "Among Us in PEAK"
+  },
   "version": "0.1.0",
   "author": "ImKirit",
   "status": "experimental",
@@ -58,11 +61,115 @@
     }
   ],
   "controls": [
-    { "key": "G", "text": { "en": "Traitor: kill the nearest crew member in range.", "de": "Verräter: nächstes Crewmitglied in Reichweite töten." } },
-    { "key": "H", "text": { "en": "Traitor: cut the rope another player hangs on.", "de": "Verräter: Seil kappen, an dem ein anderer Spieler hängt." } },
-    { "key": "B", "text": { "en": "Report a body nearby.", "de": "Leiche in der Nähe melden." } },
-    { "key": "N", "text": { "en": "Call an emergency meeting.", "de": "Notfall-Meeting ausrufen." } },
-    { "key": "F2", "text": { "en": "Show or hide the role box.", "de": "Rollenkasten ein- und ausblenden." } },
-    { "key": "1 to 9, 0", "text": { "en": "In a meeting: vote for that player, 0 skips.", "de": "Im Meeting: für diesen Spieler stimmen, 0 überspringt." } }
-  ]
+    {
+      "key": "G",
+      "text": {
+        "en": "Traitor: kill the nearest crew member in range.",
+        "de": "Verräter: nächstes Crewmitglied in Reichweite töten."
+      }
+    },
+    {
+      "key": "H",
+      "text": {
+        "en": "Traitor: cut the rope another player hangs on.",
+        "de": "Verräter: Seil kappen, an dem ein anderer Spieler hängt."
+      }
+    },
+    {
+      "key": "B",
+      "text": {
+        "en": "Report a body nearby.",
+        "de": "Leiche in der Nähe melden."
+      }
+    },
+    {
+      "key": "N",
+      "text": {
+        "en": "Call an emergency meeting.",
+        "de": "Notfall-Meeting ausrufen."
+      }
+    },
+    {
+      "key": "F2",
+      "text": {
+        "en": "Show or hide the role box.",
+        "de": "Rollenkasten ein- und ausblenden."
+      }
+    },
+    {
+      "key": "1 to 9, 0",
+      "text": {
+        "en": "In a meeting: vote for that player, 0 skips.",
+        "de": "Im Meeting: für diesen Spieler stimmen, 0 überspringt."
+      }
+    }
+  ],
+  "usage": {
+    "keys": [
+      {
+        "key": "G",
+        "text": {
+          "en": "Traitor: kill the nearest crew member in range.",
+          "de": "Verräter: nächstes Crewmitglied in Reichweite töten."
+        }
+      },
+      {
+        "key": "H",
+        "text": {
+          "en": "Traitor: cut the rope another player hangs on.",
+          "de": "Verräter: Seil kappen, an dem ein anderer Spieler hängt."
+        }
+      },
+      {
+        "key": "B",
+        "text": {
+          "en": "Report a body nearby.",
+          "de": "Leiche in der Nähe melden."
+        }
+      },
+      {
+        "key": "N",
+        "text": {
+          "en": "Call an emergency meeting.",
+          "de": "Notfall-Meeting ausrufen."
+        }
+      },
+      {
+        "key": "F2",
+        "text": {
+          "en": "Show or hide the role box.",
+          "de": "Rollenkasten ein- und ausblenden."
+        }
+      },
+      {
+        "key": "1 to 9, 0",
+        "text": {
+          "en": "In a meeting: vote for that player, 0 skips.",
+          "de": "Im Meeting: für diesen Spieler stimmen, 0 überspringt."
+        }
+      }
+    ],
+    "steps": [
+      {
+        "en": "The host starts the run as usual. About 12 seconds after landing everyone gets a role.",
+        "de": "Der Host startet den Run wie immer. Etwa 12 Sekunden nach der Landung bekommt jeder eine Rolle."
+      },
+      {
+        "en": "Crew: climb to the summit. Traitors: strike when nobody looks, with G or H.",
+        "de": "Crew: zum Gipfel klettern. Verräter: zuschlagen, wenn niemand hinsieht, mit G oder H."
+      },
+      {
+        "en": "Found a body? Press B. Suspicious? Press N for a meeting.",
+        "de": "Eine Leiche gefunden? B drücken. Verdacht? N für ein Meeting."
+      },
+      {
+        "en": "In the meeting vote by click or number key. Most votes is out.",
+        "de": "Im Meeting per Klick oder Zifferntaste abstimmen. Die meisten Stimmen fliegen raus."
+      },
+      {
+        "en": "To try it alone, set TestModus = true in the mod settings.",
+        "de": "Zum Ausprobieren allein in den Mod-Einstellungen TestModus = true setzen."
+      }
+    ]
+  }
 }
