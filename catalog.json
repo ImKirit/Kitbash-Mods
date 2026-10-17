@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-17T22:07:06.615Z",
+  "updated": "2026-10-17T22:07:09.222Z",
   "loaders": {
     "bepinex5-x64": {
       "type": "bepinex5",
@@ -845,6 +845,42 @@
           }
         }
       ],
+      "usage": {
+        "keys": [
+          {
+            "key": "Right Shift",
+            "text": {
+              "en": "Spawn menu with all 29 monsters, real or placeholder model. Close with the same key or Esc.",
+              "de": "Spawn-Menü mit allen 29 Monstern, echtes Modell oder Ersatz. Schließen mit derselben Taste oder Esc."
+            }
+          },
+          {
+            "key": "F9",
+            "text": {
+              "en": "Host only: a random monster 10 to 14 metres away.",
+              "de": "Nur Host: sofort ein zufälliges Monster 10 bis 14 Meter entfernt."
+            }
+          }
+        ],
+        "steps": [
+          {
+            "en": "Install R.E.P.O. too if you can, the mod reads the real monster models from it.",
+            "de": "Wenn möglich auch R.E.P.O. installieren, die Mod liest die echten Monster-Modelle daraus."
+          },
+          {
+            "en": "Start a run. Every 70 to 140 seconds the host spawns a monster near the climbers.",
+            "de": "Einen Run starten. Alle 70 bis 140 Sekunden lässt der Host ein Monster nahe den Kletterern erscheinen."
+          },
+          {
+            "en": "To shake a monster off, break the line of sight, hold out for 25 seconds or get more than 80 metres away.",
+            "de": "Abschütteln: Sichtlinie brechen, 25 Sekunden durchhalten oder weiter als 80 Meter wegkommen."
+          },
+          {
+            "en": "The host opens the spawn menu with Right Shift to pick a monster, or presses F9 for a random one.",
+            "de": "Der Host öffnet das Spawn-Menü mit der rechten Umschalttaste oder drückt F9 für ein zufälliges Monster."
+          }
+        ]
+      },
       "conflicts": [],
       "thirdParty": [
         {

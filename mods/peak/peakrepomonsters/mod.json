@@ -1,7 +1,10 @@
 {
   "id": "peakrepomonsters",
   "game": "peak",
-  "name": { "en": "R.E.P.O. Monsters", "de": "R.E.P.O.-Monster" },
+  "name": {
+    "en": "R.E.P.O. Monsters",
+    "de": "R.E.P.O.-Monster"
+  },
   "version": "0.2.0",
   "author": "ImKirit",
   "status": "experimental",
@@ -17,7 +20,9 @@
   "minLauncherVersion": "0.1.0",
   "installTo": "BepInEx/plugins/PeakRepoMonsters",
   "include": [
-    { "from": "THIRD-PARTY-LICENSES.txt" }
+    {
+      "from": "THIRD-PARTY-LICENSES.txt"
+    }
   ],
   "persist": [
     "BepInEx/config/dev.imkirit.peak.repomonsters.cfg"
@@ -65,11 +70,67 @@
     }
   ],
   "controls": [
-    { "key": "Right Shift", "text": { "en": "Spawn menu with all monsters.", "de": "Spawn-Menü mit allen Monstern." } },
-    { "key": "F9", "text": { "en": "Host only: a random monster 10 to 14 metres away.", "de": "Nur Host: sofort ein zufälliges Monster in 10 bis 14 Metern Entfernung." } }
+    {
+      "key": "Right Shift",
+      "text": {
+        "en": "Spawn menu with all monsters.",
+        "de": "Spawn-Menü mit allen Monstern."
+      }
+    },
+    {
+      "key": "F9",
+      "text": {
+        "en": "Host only: a random monster 10 to 14 metres away.",
+        "de": "Nur Host: sofort ein zufälliges Monster in 10 bis 14 Metern Entfernung."
+      }
+    }
   ],
   "thirdParty": [
-    { "name": "AssetsTools.NET 3.0.0 (AssetsTools.NET.dll)", "license": "MIT", "url": "https://github.com/nesrak1/AssetsTools.NET" },
-    { "name": "classdata.tpk from UABEA", "license": "MIT", "url": "https://github.com/nesrak1/UABEA" }
-  ]
+    {
+      "name": "AssetsTools.NET 3.0.0 (AssetsTools.NET.dll)",
+      "license": "MIT",
+      "url": "https://github.com/nesrak1/AssetsTools.NET"
+    },
+    {
+      "name": "classdata.tpk from UABEA",
+      "license": "MIT",
+      "url": "https://github.com/nesrak1/UABEA"
+    }
+  ],
+  "usage": {
+    "keys": [
+      {
+        "key": "Right Shift",
+        "text": {
+          "en": "Spawn menu with all 29 monsters, real or placeholder model. Close with the same key or Esc.",
+          "de": "Spawn-Menü mit allen 29 Monstern, echtes Modell oder Ersatz. Schließen mit derselben Taste oder Esc."
+        }
+      },
+      {
+        "key": "F9",
+        "text": {
+          "en": "Host only: a random monster 10 to 14 metres away.",
+          "de": "Nur Host: sofort ein zufälliges Monster 10 bis 14 Meter entfernt."
+        }
+      }
+    ],
+    "steps": [
+      {
+        "en": "Install R.E.P.O. too if you can, the mod reads the real monster models from it.",
+        "de": "Wenn möglich auch R.E.P.O. installieren, die Mod liest die echten Monster-Modelle daraus."
+      },
+      {
+        "en": "Start a run. Every 70 to 140 seconds the host spawns a monster near the climbers.",
+        "de": "Einen Run starten. Alle 70 bis 140 Sekunden lässt der Host ein Monster nahe den Kletterern erscheinen."
+      },
+      {
+        "en": "To shake a monster off, break the line of sight, hold out for 25 seconds or get more than 80 metres away.",
+        "de": "Abschütteln: Sichtlinie brechen, 25 Sekunden durchhalten oder weiter als 80 Meter wegkommen."
+      },
+      {
+        "en": "The host opens the spawn menu with Right Shift to pick a monster, or presses F9 for a random one.",
+        "de": "Der Host öffnet das Spawn-Menü mit der rechten Umschalttaste oder drückt F9 für ein zufälliges Monster."
+      }
+    ]
+  }
 }
