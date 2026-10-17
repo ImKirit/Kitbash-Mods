@@ -1,7 +1,10 @@
 {
   "id": "peakminecraft",
   "game": "peak",
-  "name": { "en": "Minecraft in PEAK", "de": "Minecraft in PEAK" },
+  "name": {
+    "en": "Minecraft in PEAK",
+    "de": "Minecraft in PEAK"
+  },
   "version": "0.1.0",
   "author": "ImKirit",
   "status": "experimental",
@@ -13,7 +16,11 @@
     "en": "B switches Minecraft mode on. The hotbar appears at the bottom, the crosshair in the middle. Left mouse breaks, right mouse places, middle mouse picks the block you aim at. F opens the block picker, the creative inventory. Blocks sit on a fixed one metre grid and can go anywhere within 4.5 blocks: on rock, on items, on other blocks.\n\nBlocks are solid. You can stand on them and climb them with PEAK's own climbing. Sand, red sand and gravel fall until something carries them. With a new level all blocks are gone.\n\nTextures, block models, GUI, font and sounds are read at runtime from your own Minecraft Java installation. The mod contains no Minecraft file. If no installation is found, the mod stays completely off and shows a message.",
     "de": "Mit B schaltest du den Minecraft-Modus ein. Unten erscheint die Hotbar, in der Mitte das Fadenkreuz. Linke Maustaste baut ab, rechte setzt, mittlere holt den anvisierten Block. F öffnet die Blockauswahl, das Kreativ-Inventar. Blöcke sitzen auf einem festen 1-m-Raster und lassen sich überall hinsetzen, wo die Reichweite von 4,5 Blöcken hinkommt: an Fels, an Gegenstände, an andere Blöcke.\n\nBlöcke sind massiv. Man kann darauf stehen und mit PEAKs eigenem Klettern daran hoch. Sand, roter Sand und Kies fallen, bis etwas sie trägt. Mit einem neuen Level sind alle Blöcke weg.\n\nTexturen, Blockmodelle, GUI, Schrift und Sounds werden zur Laufzeit aus deiner eigenen Minecraft-Java-Installation gelesen. Die Mod enthält keine Minecraft-Datei. Wird keine Installation gefunden, bleibt die Mod komplett aus und zeigt eine Meldung."
   },
-  "images": ["selftest-world.png"],
+  "images": [
+    "selftest-world.png",
+    "selftest-closeup.png",
+    "selftest-picker.png"
+  ],
   "loader": "bepinex5-x64",
   "minLauncherVersion": "0.1.0",
   "installTo": "BepInEx/plugins/PeakMinecraft",
@@ -69,11 +76,115 @@
     }
   ],
   "controls": [
-    { "key": "B", "text": { "en": "Minecraft mode on and off.", "de": "Minecraft-Modus an und aus." } },
-    { "key": "F", "text": { "en": "Open and close the block picker.", "de": "Blockauswahl öffnen und schließen." } },
-    { "key": "1 to 9, mouse wheel", "text": { "en": "Pick a hotbar slot.", "de": "Hotbar-Slot wählen." } },
-    { "key": "Hold left mouse", "text": { "en": "Break a block.", "de": "Block abbauen." } },
-    { "key": "Hold right mouse", "text": { "en": "Place a block.", "de": "Block setzen." } },
-    { "key": "Middle mouse", "text": { "en": "Pick the block you aim at.", "de": "Anvisierten Block in die Hotbar holen." } }
-  ]
+    {
+      "key": "B",
+      "text": {
+        "en": "Minecraft mode on and off.",
+        "de": "Minecraft-Modus an und aus."
+      }
+    },
+    {
+      "key": "F",
+      "text": {
+        "en": "Open and close the block picker.",
+        "de": "Blockauswahl öffnen und schließen."
+      }
+    },
+    {
+      "key": "1 to 9, mouse wheel",
+      "text": {
+        "en": "Pick a hotbar slot.",
+        "de": "Hotbar-Slot wählen."
+      }
+    },
+    {
+      "key": "Hold left mouse",
+      "text": {
+        "en": "Break a block.",
+        "de": "Block abbauen."
+      }
+    },
+    {
+      "key": "Hold right mouse",
+      "text": {
+        "en": "Place a block.",
+        "de": "Block setzen."
+      }
+    },
+    {
+      "key": "Middle mouse",
+      "text": {
+        "en": "Pick the block you aim at.",
+        "de": "Anvisierten Block in die Hotbar holen."
+      }
+    }
+  ],
+  "usage": {
+    "keys": [
+      {
+        "key": "B",
+        "text": {
+          "en": "Minecraft mode on and off.",
+          "de": "Minecraft-Modus an und aus."
+        }
+      },
+      {
+        "key": "F",
+        "text": {
+          "en": "Open and close the block picker (also Esc).",
+          "de": "Blockauswahl öffnen und schließen (auch Esc)."
+        }
+      },
+      {
+        "key": "1 to 9, wheel",
+        "text": {
+          "en": "Pick a hotbar slot.",
+          "de": "Hotbar-Slot wählen."
+        }
+      },
+      {
+        "key": "Hold left mouse",
+        "text": {
+          "en": "Break a block.",
+          "de": "Block abbauen."
+        }
+      },
+      {
+        "key": "Hold right mouse",
+        "text": {
+          "en": "Place a block, another one every 0.2 s.",
+          "de": "Block setzen, alle 0,2 s ein weiterer."
+        }
+      },
+      {
+        "key": "Middle mouse",
+        "text": {
+          "en": "Copy the block you aim at into the hotbar.",
+          "de": "Anvisierten Block in die Hotbar holen."
+        }
+      }
+    ],
+    "steps": [
+      {
+        "en": "Minecraft Java must be installed on your PC, the mod reads textures and sounds from it.",
+        "de": "Minecraft Java muss auf deinem PC installiert sein, die Mod liest Texturen und Töne daraus."
+      },
+      {
+        "en": "Press B. The hotbar and the crosshair appear.",
+        "de": "B drücken. Hotbar und Fadenkreuz erscheinen."
+      },
+      {
+        "en": "Place blocks with the right mouse button on rock, items or other blocks, within 4.5 blocks.",
+        "de": "Blöcke mit der rechten Maustaste an Fels, Gegenstände oder andere Blöcke setzen, bis 4,5 Blöcke weit."
+      },
+      {
+        "en": "Stand on blocks and climb them. To climb your own blocks, switch the mode off with B, otherwise left click breaks them.",
+        "de": "Auf Blöcken stehen und daran klettern. Zum Klettern an eigenen Blöcken den Modus mit B ausschalten, sonst baut der Linksklick ab."
+      },
+      {
+        "en": "F opens the block picker. Your hotbar is saved.",
+        "de": "F öffnet die Blockauswahl. Deine Hotbar wird gespeichert."
+      }
+    ]
+  }
 }
