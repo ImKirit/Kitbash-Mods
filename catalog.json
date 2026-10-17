@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-17T22:06:57.724Z",
+  "updated": "2026-10-17T22:07:01.911Z",
   "loaders": {
     "bepinex5-x64": {
       "type": "bepinex5",
@@ -290,6 +290,56 @@
           }
         }
       ],
+      "usage": {
+        "keys": [
+          {
+            "key": "G",
+            "text": {
+              "en": "Draw or put away the portal gun.",
+              "de": "Portalkanone ziehen oder wegstecken."
+            }
+          },
+          {
+            "key": "Left click",
+            "text": {
+              "en": "Place the blue portal.",
+              "de": "Blaues Portal setzen."
+            }
+          },
+          {
+            "key": "Right click",
+            "text": {
+              "en": "Place the orange portal.",
+              "de": "Oranges Portal setzen."
+            }
+          },
+          {
+            "key": "H",
+            "text": {
+              "en": "Remove your own portals.",
+              "de": "Eigene Portale entfernen."
+            }
+          }
+        ],
+        "steps": [
+          {
+            "en": "Press G to draw the gun. The grab beam is off while it is drawn.",
+            "de": "G drücken, um die Kanone zu ziehen. Solange sie gezogen ist, greift der Greifstrahl nicht."
+          },
+          {
+            "en": "Shoot a blue portal on one wall and an orange portal on another.",
+            "de": "Ein blaues Portal an eine Wand schießen, ein oranges an eine andere."
+          },
+          {
+            "en": "Walk into a portal, you come out of the other one with your momentum. Throw valuables or push a cart through.",
+            "de": "In ein Portal laufen, du kommst mit Schwung aus dem anderen. Wertsachen hineinwerfen oder einen Karren durchschieben."
+          },
+          {
+            "en": "Press H to remove your portals, G again to put the gun away.",
+            "de": "H entfernt deine Portale, erneut G steckt die Kanone weg."
+          }
+        ]
+      },
       "conflicts": [],
       "thirdParty": [],
       "persist": [
