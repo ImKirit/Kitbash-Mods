@@ -102,6 +102,26 @@ images/mods/<mod>/                    pictures shown on the mod page
 | `files` | every file in the zip with path, size and SHA256. For BepInEx all paths must be below `BepInEx/plugins/` or `BepInEx/patchers/`. A zip with a file that is not listed is refused |
 | `minLauncherVersion` | older launchers show the mod but do not launch it |
 
+### Upcoming projects
+
+An optional `upcoming` list announces what is being worked on. Launchers older than 0.2.0
+ignore it.
+
+```json
+"upcoming": [
+  { "id": "eldenring-minecraft", "name": "Elden Ring", "steamAppId": 1245620, "featured": true,
+    "status": { "en": "In development", "de": "In Entwicklung" },
+    "title": { "en": "Elden Ring x Minecraft" },
+    "teaser": { "en": "One or two sentences." },
+    "details": [ { "en": "One line per feature." } ] },
+  { "id": "minecraft", "name": "Minecraft", "minecraft": true, "status": { "en": "Coming soon" } }
+]
+```
+
+`featured` puts one entry at the top of the launcher's start page. Pictures are found by the
+launcher: by `steamAppId` from Steam, or for `"minecraft": true` from the player's own
+Minecraft jar. No pictures belong in the catalog for these.
+
 ### Rules for package addresses
 
 - A path relative to the catalog (as above), or

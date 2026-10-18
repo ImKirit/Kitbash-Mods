@@ -1114,5 +1114,146 @@
         }
       ]
     }
+  ],
+  "upcoming": [
+    {
+      "id": "eldenring-minecraft",
+      "name": "Elden Ring",
+      "steamAppId": 1245620,
+      "featured": true,
+      "status": {
+        "en": "In development",
+        "de": "In Entwicklung"
+      },
+      "title": {
+        "en": "Elden Ring x Minecraft",
+        "de": "Elden Ring x Minecraft"
+      },
+      "teaser": {
+        "en": "Minecraft moves into the Lands Between: your skin, its movement, its inventory and the loot of its chests.",
+        "de": "Minecraft zieht ins Zwischenland: dein Skin, seine Bewegung, sein Inventar und die Beute seiner Truhen."
+      },
+      "details": [
+        {
+          "en": "Your Minecraft skin as the player model",
+          "de": "Dein Minecraft-Skin als Spielfigur"
+        },
+        {
+          "en": "Minecraft movement: sprinting, jumping, swimming",
+          "de": "Minecraft-Bewegung: Sprinten, Springen, Schwimmen"
+        },
+        {
+          "en": "Inventory and hotbar from Minecraft",
+          "de": "Inventar und Hotbar aus Minecraft"
+        },
+        {
+          "en": "Chests with the real Minecraft loot tables",
+          "de": "Truhen mit den echten Minecraft-Beutetabellen"
+        },
+        {
+          "en": "An elytra as a boss reward",
+          "de": "Elytren als Belohnung von Bossen"
+        },
+        {
+          "en": "Bow and enchantments",
+          "de": "Bogen und Verzauberungen"
+        },
+        {
+          "en": "In development. Nothing of it can be played yet, and nothing is promised before it runs.",
+          "de": "In Entwicklung. Spielbar ist davon noch nichts, und versprochen wird erst, was läuft."
+        }
+      ]
+    },
+    {
+      "id": "minecraft",
+      "name": "Minecraft",
+      "minecraft": true,
+      "status": {
+        "en": "Coming soon",
+        "de": "Bald verfügbar"
+      },
+      "teaser": {
+        "en": "Fabric mods for Minecraft Java, launched like everything else.",
+        "de": "Fabric-Mods für Minecraft Java, gestartet wie alles andere."
+      }
+    },
+    {
+      "id": "ghostoftsushima",
+      "name": "Ghost of Tsushima",
+      "steamAppId": 2215430,
+      "status": {
+        "en": "Planned",
+        "de": "Geplant"
+      },
+      "teaser": {
+        "en": "A merge for Tsushima is being looked into.",
+        "de": "Ein Merge für Tsushima wird geprüft."
+      }
+    },
+    {
+      "id": "gtav",
+      "name": "GTA V",
+      "steamAppId": 271590,
+      "status": {
+        "en": "Planned",
+        "de": "Geplant"
+      },
+      "teaser": {
+        "en": "Story mode only, never online.",
+        "de": "Nur Story-Modus, nie online."
+      }
+    },
+    {
+      "id": "skyrim",
+      "name": "Skyrim Special Edition",
+      "steamAppId": 489830,
+      "status": {
+        "en": "Planned",
+        "de": "Geplant"
+      },
+      "teaser": {
+        "en": "Merges for the Special Edition.",
+        "de": "Merges für die Special Edition."
+      }
+    },
+    {
+      "id": "valheim",
+      "name": "Valheim",
+      "steamAppId": 892970,
+      "status": {
+        "en": "Planned",
+        "de": "Geplant"
+      },
+      "teaser": {
+        "en": "Unity and BepInEx, a good fit for the launcher.",
+        "de": "Unity und BepInEx, passt gut zum Launcher."
+      }
+    },
+    {
+      "id": "fallout4",
+      "name": "Fallout 4",
+      "steamAppId": 377160,
+      "status": {
+        "en": "Planned",
+        "de": "Geplant"
+      },
+      "teaser": {
+        "en": "Merges for the Commonwealth.",
+        "de": "Merges für das Commonwealth."
+      }
+    },
+    {
+      "id": "palworld",
+      "name": "Palworld",
+      "steamAppId": 1623730,
+      "status": {
+        "en": "Planned",
+        "de": "Geplant"
+      },
+      "teaser": {
+        "en": "Private worlds with friends.",
+        "de": "Private Welten mit Freunden."
+      }
+    }
   ]
 }
